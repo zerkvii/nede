@@ -11,7 +11,19 @@ spring:
     cache: false
   resources:
     static-locations: classpath:/
-
-
-
-
+  datasource:
+    url: jdbc:mysql://localhost:3306/nede?useUnicode=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#      naming:
+#        implicit_strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+#        physical_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+   properties:
+       hibernate:
+          dialect : org.hibernate.dialect.MySQL5Dialect
