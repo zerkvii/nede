@@ -24,6 +24,6 @@ spring:
 #      naming:
 #        implicit_strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
 #        physical_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-   properties:
+    properties:
        hibernate:
           dialect : org.hibernate.dialect.MySQL5Dialect
